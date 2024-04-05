@@ -1,4 +1,4 @@
-import { FormEvent, ChangeEvent, useState } from 'react'
+import {FormEvent, ChangeEvent, useState, useEffect} from 'react'
 import {
   Stack,
   FormControl,
@@ -46,6 +46,12 @@ export default function Connect() {
     e.preventDefault()
     await connectClient(address)
   }
+
+  useEffect(() => {
+    let url = window.location.href.replace("3000", "26657");
+    console.log("url", url)
+    connectClient(url)
+  }, []);
 
   const connectClient = async (rpcAddress: string) => {
     try {
