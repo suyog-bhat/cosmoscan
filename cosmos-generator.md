@@ -4,7 +4,7 @@
 
 ### 1. Create a Cosmos Chain
 
-- Navigate to the "Create Chain" page.
+- Navigate to the "Bootstrap New Chain" page.
 - Input the following details:
   - Chain Name: Provide a unique name for your Cosmos blockchain.
   - Bech32 Prefix: Enter the Bech32 prefix for your chain's addresses.
